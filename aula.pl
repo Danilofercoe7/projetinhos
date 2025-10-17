@@ -4,7 +4,6 @@ pip install django
 pip install python-dotenv 
 python -m venv venv 
 python manage.py runserver 
-python manage.py runserver
 django-admin help
 django-admin startproject setup .
 git init
@@ -17,6 +16,7 @@ git remote add origin
 git push -u origin master 
 git clone 
 git add .
-git commit -m "app aluno criado"
+git commit -m "app aluno"
 git push origin master
+
 
