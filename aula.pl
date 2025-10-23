@@ -1,4 +1,8 @@
 .\venv\Scripts\Activate.ps1
+git add .
+git commit -m "app aluno"
+git push origin master
+
 pip freeze > requirements.txt
 pip install django
 pip install python-dotenv 
@@ -15,8 +19,5 @@ git config --global user.name ""
 git remote add origin
 git push -u origin master 
 git clone 
-git add .
-git commit -m "app aluno"
-git push origin master
 
 
