@@ -7,7 +7,8 @@ pip freeze > requirements.txt
 pip install django
 pip install python-dotenv 
 python -m venv venv 
-python manage.py runserver 
+python manage.py runserver
+python manage.py collectstatic 
 django-admin help
 django-admin startproject setup .
 git init
@@ -19,5 +20,6 @@ git config --global user.name ""
 git remote add origin
 git push -u origin master 
 git clone 
+
 
 
