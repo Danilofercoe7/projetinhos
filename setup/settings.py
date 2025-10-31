@@ -9,13 +9,12 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-#arquivos setting
+# arquivo settings.py
 from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-
-load_dotenv ()
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,6 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# adicionar informações 
 
 # Application definition
 
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/Sao Paulo'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -125,8 +125,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-os.path.join(BASE_DIR, 'setup/static')
+    os.path.join(BASE_DIR, 'setup/static')
 ]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
